@@ -12,6 +12,14 @@
         position: absolute;
         border: none;
         top: calc(50% - 36px);
+        
+        &:focus {
+            outline: none;
+            }
+
+        &:hover {
+            box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+            }
 
         &--left {
             left: -30px;
