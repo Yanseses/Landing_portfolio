@@ -1,0 +1,21 @@
+.area-form {
+    padding: 20px 20px 5px;
+    width: 100%;
+
+    &.error {
+        border: 2px solid #ff0000;
+    }
+
+    &:focus+.label-form,
+    &:not(:placeholder-shown)+.label-form {
+        margin-top: 2px;
+        font-size: 16px;
+        }
+
+    @include small {
+        &:focus+.label-form,
+        &:not(:placeholder-shown)+.label-form {
+            font-size: 14px;
+            }
+        }
+    }

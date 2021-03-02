@@ -1,0 +1,85 @@
+.address {
+    &__list {
+        padding: 9px 0 0 78px;
+        margin: $marginZero;
+        }
+    
+    &__item {
+        list-style: none;
+        margin-bottom: 29px;
+        font-size: $textSize25;
+        font-weight: 400;
+        font-style: normal;
+        color: $colorBlack;
+
+        &:last-child {
+            margin-bottom: $marginZero;
+            }
+        }
+
+    &__link {
+        &--phone {
+            background: url("../img/call-answer.png") no-repeat;
+            background-position-y: 5px;
+            background-position-x: 7px;
+            padding-left: 45px;
+            }
+
+        &--email {
+            background: url("../img/envelope.png") no-repeat;
+            background-position-y: 12px;
+            background-position-x: 7px;
+            padding-left: 50px;
+            }
+        }    
+
+    @include large {
+        &__list {
+            padding: 8px 0 0 40px;
+            }
+        }
+
+    @include small {
+        &__list {
+            padding: 0;
+            }
+
+        &__item {
+            font-size: $textSize20;
+            }
+
+        &__link {
+            &--email {
+                background-position-y: 8px;
+                }
+            }
+        }
+
+    @include xSmall {
+        &__list {
+            padding: $paddingZero;
+            margin-top: 30px;
+            }
+
+        &__item {
+            margin-bottom: 23px;
+            }
+        
+        &__link {
+            background-size: 7%;
+            padding-left: 33px;
+
+            &--phone {
+                background-position-y: 7px;
+                background-position-x: -1px;
+                letter-spacing: 0.4px;
+                }
+
+            &--email {
+                background-position-y: 11px;
+                background-position-x: 0px;
+                letter-spacing: 0.3px;
+                }
+            }
+        }
+    }

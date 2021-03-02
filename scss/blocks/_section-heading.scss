@@ -1,0 +1,14 @@
+.section-heading {
+    font-weight: 600;
+    font-size: $textSize18 * 3;
+    margin-top: $marginZero;
+    color: $colorBlack;
+
+    @include small {
+        font-size: 38px;
+        }
+
+    @include xSmall {
+        font-size: 30px;
+        }
+    }

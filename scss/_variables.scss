@@ -1,0 +1,43 @@
+// Размеры контейнера центрировщика
+$xlContainer: 1170px;
+$lgContainer: 945px;
+$mdContainer: 90%;
+$smContainer: 90%;
+$xsContainer: 280px;
+
+// Размеры экрана для брейкпоинта
+$large: 1235px;
+$medium: 1042px;
+$small: 650px;
+$xSmall: 320px;
+
+// К блоку центрировщику
+$flex: flex;
+
+// К Style. Основные переменные к body.
+$fontSizeBody: 20px;
+$fontFamily: "Roboto", "Arial", sans-serif;
+
+// Внутренние отступы
+$paddingMainLarge: 91px 0 102px;
+$paddingMainMedium: 91px 0 105px;
+$paddingMainSmall: 45px 0 50px;
+$paddingZero: 0px;
+$marginZero: 0px;
+
+// Дефолтные цвета темы
+$colorPink: #fc557c;
+$colorOrange: #ff8f5a;
+$colorWhite: #ffffff;
+$colorGrey: #8993ad;
+$colorBlack: #000000;
+
+// Внешние отступы
+
+// Font-size
+$textSize12: 12px;
+$textSize16: 16px;
+$textSize18: 18px;
+$textSize20: 20px;
+$textSize25: 25px;
+$textSize30: 30px;

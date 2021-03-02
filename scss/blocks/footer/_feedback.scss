@@ -1,0 +1,34 @@
+.feedback {
+    &__btn {
+        padding: 13px 63px 12px 58px;
+        margin-right: 22px;
+        letter-spacing: 0.3px;
+        font-size: $textSize16;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: $colorPink;
+            color: $colorWhite;
+            transition: 0.5s;
+            }
+        }
+
+    @include large {
+        &__btn {
+            margin: $marginZero;
+            font-size: $textSize16;
+            }
+        }
+
+    @include small {
+        margin-top: 26px;
+        }
+    
+    @include xSmall {
+        &__btn {
+            padding: 19px 77px 16px 76px;
+            background-color: $colorPink;
+            color: $colorWhite;
+            }
+    }
+}

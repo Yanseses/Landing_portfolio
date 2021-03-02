@@ -1,0 +1,77 @@
+.navigation {
+    flex-grow: 1;
+    
+    &__burger {
+        display: none;
+        }
+    
+    &__list {
+        transition: left 3s;
+        margin: 10px 0;
+        }
+
+    @include large {
+        &__list {
+            transition: all 500ms cubic-bezier(0.8, 0, 0.33, 1);
+            position: fixed;
+            background-color: #fbfbfb;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+            z-index: 10;
+            }
+
+        &__item {
+            margin: 0 auto;
+            display: block;
+            border-bottom: 1px solid #8993ad;
+            padding: 20px 0;
+            width: 945px;
+
+            &:nth-child(2n) {
+                margin-right: auto;
+                }
+
+            &:last-child {
+                border-bottom: none;
+                }
+            }
+
+        &__burger {
+            display: block;
+            margin-top: 7px;
+            border: none;
+            background-image: url("../img/burger-lg.png");
+            background-repeat: no-repeat;
+            background-color: #fbfbfb;
+            width: 45px;
+            height: 40px;
+            }
+        }
+
+    @include medium {
+        &__item {
+            width: 90%;
+            }
+
+        &__burger {
+            background-image: url("../img/burger-mid.png");
+            width: 35px;
+            height: 26px;
+            }
+        }
+
+    @include xSmall {
+        &__item {
+            padding: 10px 0;
+            width: 280px;
+            }
+
+        &__burger {
+            background-image: url("../img/burger-mob.png");
+            width: 25px;
+            height: 25px;
+            }
+        }
+}

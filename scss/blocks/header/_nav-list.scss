@@ -1,0 +1,53 @@
+.nav-list {
+    padding: $paddingZero;
+
+    &__item {
+        list-style: none;
+        display: inline-block;
+        margin-right: 28px;
+
+        &:nth-child(2n) {
+            margin-right: 25px; 
+            }
+
+        &--list {
+            display: list-item;
+            margin-bottom: 10px;
+            margin-right: $marginZero;
+
+            &:nth-child(2n) {
+                margin-right: $marginZero;
+                }
+            }
+        }
+
+    &__link {
+        font-size: $textSize16;
+        color: $colorBlack;
+
+        &:hover {
+            color: $colorPink;
+            padding-bottom: 1px;
+            border-bottom: 1px solid $colorPink;
+            }
+
+        &--grey {
+            font-size: $textSize18;
+            color: $colorGrey;
+
+            &:hover {
+                color: $colorPink;
+                padding-bottom: 1px;
+                border-bottom: 1px solid $colorPink;
+                }
+            }
+        }
+
+    @include xSmall {
+        &__link {
+            &--grey {
+                font-size: $textSize16;
+                }
+            }
+        }
+    }

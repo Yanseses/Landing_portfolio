@@ -1,0 +1,56 @@
+.swiper-wrapper  {
+    margin-bottom: 97px;
+
+    &__fugure {
+        margin: $marginZero;
+        }
+
+    &__descr-img {
+        font-size: $textSize20;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        }
+
+    &__img {
+        margin-bottom: 32px;
+        }
+
+    @include large {
+        margin-bottom: 85px;
+
+        &__item {
+            width: 455px;
+
+            &:nth-child(3) {
+                display: none;
+                }
+            }
+
+        &__img {
+            margin-bottom: 20px;
+            width: 100%;
+            }
+        
+        &__descr-img {
+            font-size: $textSize25;
+            }
+        }
+
+    @include small {
+        margin-bottom: 18px;
+
+        &__item {
+            &:nth-child(1) {
+                display: none;
+                }
+            }
+
+        &__img {
+            margin-bottom: 15px;
+            }
+
+        &__descr-img {
+            font-size: $textSize18;
+            }
+        }
+    }

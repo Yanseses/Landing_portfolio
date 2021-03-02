@@ -1,0 +1,39 @@
+// Флекс контейнер
+@mixin flexContainer {
+    display: $flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+// Центрировщик
+@mixin fixContainer($width) {
+    width: $width;
+    margin: 0 auto;
+    }
+
+@mixin large {
+    @media (max-width: $large) {
+        @content;
+    }
+}
+
+// Медиа миксин (laptop)
+@mixin medium {
+    @media (max-width: $medium) {
+        @content;
+    }
+}
+
+// Медиа миксин (планшет)
+@mixin small {
+    @media (max-width: $small) {
+        @content;
+    }
+}
+
+// Медиа миксин (мобилка)
+@mixin xSmall {
+    @media (max-width: $xSmall) {
+        @content;
+    }
+}

@@ -1,0 +1,19 @@
+.banner-image {
+    width: 30%;
+
+    @include large {
+        width: 46%;
+        }
+
+    @include small {
+        margin: 0 auto;
+        }   
+
+    @include xSmall {
+        width: 100%;
+
+        &__photo {
+            margin-left: 55px;
+            }
+        }
+    }

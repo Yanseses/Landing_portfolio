@@ -1,0 +1,82 @@
+.callback {
+    display: none;
+    transition: 1s;
+    padding: 25px;
+    margin: 10% auto;
+    width: 600px;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0 0 15px 10px #808080;
+
+    &__window {
+        border: none;
+        margin: 0;
+        padding: 0;
+        }
+    
+    &__list {
+        margin-bottom: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    &__item {
+        list-style: none;
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+            }
+        }
+
+    &__heading {
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: $textSize30;
+        }
+
+    &__close {
+        border: 1px solid;
+        background: initial;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        top: 25px;
+        left: 90%;
+    }
+
+    &__submit {
+        width: 100%;
+        background-color: $colorPink;
+        border: 1px solid $colorPink;
+        color: $colorWhite;
+        padding: 17px;
+        font-size: 16px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: initial;
+            color: $colorPink;
+        }
+    }
+
+    @include small {
+        font-size: 18px;
+        width: 280px;
+        margin: 30% auto;
+
+        &__item {
+            margin-bottom: 20px;
+        }
+
+        &__heading {
+            font-size: 22px;
+            }
+
+        &__close {
+            left: 80%;
+            }
+        }
+    }

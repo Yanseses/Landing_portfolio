@@ -1,0 +1,41 @@
+.me-do {
+    background-color: $colorWhite;
+    padding: 88px 0 103px;
+    text-align: center;
+
+    &__section-heading {
+        margin-bottom: 86px;
+        }
+
+    &__info-btn {
+        padding: 19px 56px 18px 59px;
+        letter-spacing: 0.4px;
+        font-size: $textSize18;
+        }
+
+    @include large {
+        padding: 88px 0 108px;
+
+        &__info-btn{
+            padding: 25px 82px 19px;
+            font-size: $textSize16;
+            }
+
+        &__section-heading {
+            padding-right: 25px;
+            }
+        }
+    
+    @include small {
+        padding: $paddingMainSmall;
+
+        &__section-heading {
+            padding: $paddingZero;
+            margin-bottom: 38px;
+            }
+
+        &__info-btn {
+            padding: 19px 70px 16px;
+            }
+        }
+    }

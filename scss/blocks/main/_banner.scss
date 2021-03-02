@@ -1,0 +1,148 @@
+.banner {
+    padding: 25px 0 0;
+    max-height: 660px;
+    overflow: hidden;
+
+    &__flex-container {
+        @include flexContainer;
+        }
+    
+    &__description {
+        width: 70%;
+        padding-top: 143px;
+        }
+
+    &::before {
+        content: "";
+        background-image: url("../img/Ellipse.svg");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 5px;
+        position: absolute;
+        width: 100%;
+        height: 635px;
+        z-index: -1;
+        }  
+    
+    &__heiding {
+        font-size: $textSize25;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 43px;
+        line-height: 1.47;
+        letter-spacing: 0.3px;
+        }
+
+    &__big-text {
+        font-size: $textSize20 * 4;
+        color: $colorBlack;
+        font-weight: 600;
+        letter-spacing: 0;
+        }
+
+    &__info-btn {
+        padding: 19px 70px 17px;
+        font-size: $textSize18;
+        }
+
+    @include large {
+        &::before {
+            content: "";
+            background-image: url("../img/elips-middle.svg");
+            background-position-y: 115px;
+            }
+        
+        &__description {
+            width: 54%;
+            padding-top: 168px;
+            }
+        
+        &__heiding {
+            line-height: 1.7;
+            margin-bottom: 39px;
+            }
+
+        &__big-text {
+            font-size: $textSize18 * 3;
+            }
+
+        &__info-btn {
+            padding: 22px 93px 21px 95px;
+            font-size: $textSize18;
+            }
+        }
+
+    @include medium {
+        &::before {
+            background-position-y: 20px;
+            }
+
+        &__heiding {
+            margin-bottom: 25px;
+            font-size: $textSize18;
+            }
+        
+        &__big-text {
+            font-size: 31px;
+            display: inherit;
+            }
+
+        &__description {
+            width: 49%;
+            padding-top: 100px;
+            }
+
+        &__info-btn {
+            padding: 19px 70px 16px;
+            }
+        }
+
+    @include small {
+        &__big-text {
+            font-size: $textSize30;
+            }
+
+        &::before {
+            height: 335px;
+            }
+
+        &__info-btn {
+            padding: 18px 81px 17px;
+            font-size: $textSize16;
+            }
+            
+        &__description {
+            order: 1;
+            width: 100%;
+            padding-top: 30px;
+            text-align: center;
+            }
+        }
+
+    @include xSmall {
+        padding: 55px 0 0;
+        &::before {
+            content: "";
+            background-image: url("../img/Ellipse-mobil.svg");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: 40px;
+            position: absolute;
+            width: 100%;
+            height: 333px;
+            z-index: -1;
+            }
+
+        &__description {
+            width: 100%;
+            order: 2;
+            padding: $paddingZero;
+            }
+
+        &__heiding {
+            font-size: $textSize16;
+            text-align: center;
+            margin-bottom: 20px;
+            }
+        }
+    }

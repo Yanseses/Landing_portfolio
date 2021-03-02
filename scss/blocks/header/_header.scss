@@ -1,0 +1,75 @@
+.header {
+    padding: 28px 0 34px;
+
+    &__flex-container {
+        @include flexContainer;
+        }
+    
+    &__phone-link {
+        font-weight: 600;
+        font-size: $textSize25;
+        color: black;
+        margin-top: 7px;
+        margin-right: 27px;
+        }
+    
+    &__btn {
+        padding: 15px 41px 11px 40px;
+        font-size: $textSize16;
+        transition: 0.5s;
+        }
+    
+    &__btn:hover {
+        background-color: #f82370;
+        color: $colorWhite;
+        transition: 0.5s;
+        }
+
+    @include medium {
+        &__phone-link {
+            font-size: 22px;
+            }
+
+        &__btn {
+            padding: 10px 30px;
+            }
+        }
+
+    @include small {
+        &__phone-link {
+            font-size: 19px;
+            }
+
+        &__btn {
+            font-size: 0;
+            border-radius: 50% 50%;
+            padding: $paddingZero;
+            background-image: url("../img/callBack.png");
+            background-repeat: no-repeat;
+            background-size: 15px;
+            background-position: center;
+            width: 35px;
+            height: 35px;
+            }
+        }
+    
+    @include xSmall {
+        padding-top: 23px;
+        padding-bottom: 25px;
+
+        &__phone-link {
+            font-size: $textSize18;
+            flex-grow: 1;
+            margin-right: $marginZero;
+            }
+
+        &__btn {
+            margin-top: 3px;
+            background-position: 6px;
+            background-size: auto;
+            width: 26px;
+            height: 26px;
+            }
+        }
+
+    }

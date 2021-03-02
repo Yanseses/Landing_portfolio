@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница портфолио начинающего Frontend-разработчика. Полный список проектов и отзывов.">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>
+        Настоящий Frontend разработчик
+    </title>
+</head>
+<body class="no-js">
+    <header class="header">
+        <div class="fixed-container header__flex-container">
+            <nav class="navigation">
+                <button 
+                    class="navigation__burger js-burger" 
+                    type="button" 
+                    aria-label="Меню свернуто"
+                    aria-expanded="false">
+                </button>
+
+                <ul class="nav-list navigation__list js-nav-list">
+                   <li class="nav-list__item navigation__item">
+                       <a 
+                        href="#me-do" 
+                        class="nav-list__link">
+                                Услуги
+                       </a>
+                    </li>
+                   <li class="nav-list__item navigation__item">
+                       <a 
+                        href="#portfolio" 
+                        class="nav-list__link">
+                                Портфолио
+                       </a>
+                    </li>
+                   <li class="nav-list__item navigation__item">
+                       <a 
+                        href="#price" 
+                        class="nav-list__link">
+                                Стоимость
+                       </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="header__phone-link" href="tel:+74999955577">
+                +7 (499) 995-55-77
+            </a>
+
+            <button 
+                class="btn btn--pink header__btn" 
+                type="button" 
+                aria-label="Заказать звонок"
+                aria-expanded="false">
+                    Заказать звонок
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="svg-container banner__svg-container">
+                <object type="image/svg+xml" data="./img/svg/pink-codding.svg" class="svg-container__object svg-container__object--pink-codding">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/pink-grid.svg" class="svg-container__object svg-container__object--pink-grid">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/pink-container.svg" class="svg-container__object svg-container__object--pink-first-container">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/pink-container.svg" class="svg-container__object svg-container__object--pink-last-container">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/pink-parentheses.svg" class="svg-container__object svg-container__object--pink-parentheses">
+                    Your browser does not support SVG
+                </object>
+            </div>
+
+            <div class="fixed-container banner__flex-container">
+                <div class="banner__description">
+                    <h1 class="banner__heiding">
+                        <span class="banner__big-text">
+                            Дмитрий Алексеев
+                        </span>
+                        Frontend-разработчик и веб-верстальщик
+                    </h1>
+                    <button 
+                        class="btn btn--orange banner__info-btn" 
+                        type="button"
+                        aria-expanded="false"
+                        aria-label="Узнать больше">
+                            Узнать больше
+                    </button>
+                </div>
+
+                <div class="banner-image">
+                    <picture>
+                        <source 
+                            media="(min-width: 1043px) and (max-width: 1140px)" 
+                            type="image/webp" 
+                            srcset="
+                                img/me/me-large@1x.webp 1x, 
+                                img/me/me-large@2x.webp 2x">
+
+                        <source 
+                            media="(min-width: 651px) and (max-width: 1042px)" 
+                            type="image/webp" 
+                            srcset="
+                                img/me/me-middle@1x.webp 1x, 
+                                img/me/me-middle@2x.webp 2x">
+    
+                        <source 
+                            media="(max-width: 650px)" 
+                            type="image/webp" 
+                            srcset="
+                                img/me/me-mobil@1x.webp 1x, 
+                                img/me/me-mobil@2x.webp 2x">
+    
+                        <source 
+                            media="(min-width: 1043px) and (max-width: 1140px)" 
+                            srcset="
+                                img/me/me-large@1x.png 1x, 
+                                img/me/me-large@2x.png 2x">
+
+                        <source 
+                            media="(min-width: 651px) and (max-width: 1042px)" 
+                            srcset="
+                                img/me/me-middle@1x.png 1x, 
+                                img/me/me-middle@2x.png 2x">
+     
+                        <source 
+                            media="(max-width: 650px)" 
+                            srcset="
+                                img/me/me-mobil@1x.png 1x, 
+                                img/me/me-mobil@2x.png 2x" >
+    
+                        <img 
+                            src="img/me/me-middle@1x.png" 
+                            srcset="img/me/me-large@2x.webp 2x" 
+                            alt="Портрет на баннере" 
+                            class="banner-image__photo">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section id="me-do" class="me-do">
+            <div class="fixed-container">
+                <h2 class="section-heading me-do__section-heading">
+                    Что я делаю
+                </h2>
+
+                <ul class="work-list">
+                    <li class="work-list__item">
+                        <p class="work-list__description work-list__description--computer-icon">
+                            Вёрстка лендинг–страниц и&nbsp;сайтов&nbsp;любой сложности
+                        </p>
+                    </li>
+                    <li class="work-list__item">
+                        <p class="work-list__description work-list__description--response-icon">
+                            Адаптивная вёрстка под все браузеры&nbsp;и устройства
+                        </p>
+                    </li>
+                    <li class="work-list__item">
+                        <p class="work-list__description work-list__description--programming-icon">
+                            Frontend – разработка и&nbsp;программирование
+                        </p>
+                    </li>
+                    <li class="work-list__item">
+                        <p class="work-list__description work-list__description--coding-icon">
+                            Исправление и доработка существующей вёрстки
+                        </p>
+                    </li>
+                </ul>
+                <button 
+                    class="btn btn--orange me-do__info-btn" 
+                    type="button"
+                    aria-label="Узнать стоимость проекта"
+                    aria-expanded="false">
+                        Узнать стоимость
+                </button>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="fixed-container">
+                <h2 class="section-heading portfolio__section-heading">
+                    Примеры моих работ
+                </h2>
+
+                <div class="slider-arrows">
+                    <button 
+                        class="slider-arrows__button slider-arrows__button--left" 
+                        type="button" 
+                        aria-label="Слайд влево">
+                    </button>
+                    <button 
+                        class="slider-arrows__button slider-arrows__button--right"
+                        type="button" 
+                        aria-label="Слайд вправо">
+                    </button>
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure class="swiper-wrapper__fugure">
+                                <picture>
+                                    <source 
+                                        media="(min-width: 768px) and (max-width: 1023px)" 
+                                        type="image/webp" 
+                                        srcset="
+                                            img/portfolio/psuhologist-site-middle@1x.webp 1x, 
+                                            img/portfolio/psuhologist-site-middle@2x.webp 2x">
+                
+                                    <source 
+                                        media="(max-width: 767px)" 
+                                        type="image/webp" 
+                                        srcset="
+                                            img/portfolio/psuhologist-site-mobil@1x.webp 1x, 
+                                            img/portfolio/psuhologist-site-mobil@2x.webp 2x">
+                
+                                    <source 
+                                        media="(min-width: 768px) and (max-width: 1023px)" 
+                                        srcset="
+                                            img/portfolio/psuhologist-site-middle@1x.jpg 1x, 
+                                            img/portfolio/psuhologist-site-middle@2x.jpg 2x">
+                
+                                    <source 
+                                        media="(max-width: 767px)" 
+                                        srcset="
+                                            img/portfolio/psuhologist-site-mobil@1x.jpg 1x, 
+                                            img/portfolio/psuhologist-site-mobil@2x.jpg 2x" >
+                
+                                    <img 
+                                        src="img/portfolio/psuhologist-site-middle@1x.jpg" 
+                                        srcset="img/portfolio/psuhologist-site-middle@2x.webp 2x" 
+                                        alt="Сайт психолога Веры Антоновой" 
+                                        class="swiper-wrapper__img">
+                                </picture>
+                                <figcaption class="swiper-wrapper__descr-img">
+                                    Сайт психолога Веры Антоновой
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="swiper-wrapper__fugure">
+                                <picture>
+                                    <source 
+                                        media="(min-width: 768px) and (max-width: 1023px)" 
+                                        type="image/webp" 
+                                        srcset="
+                                            img/portfolio/kids-site-middle@1x.webp 1x, 
+                                            img/portfolio/kids-site-middle@2x.webp 2x">
+                
+                                    <source 
+                                        media="(max-width: 767px)" 
+                                        type="image/webp" 
+                                        srcset="
+                                            img/portfolio/kids-site-mobil@1x.webp 1x, 
+                                            img/portfolio/kids-site-mobil@2x.webp 2x">
+                
+                                    <source 
+                                        media="(min-width: 768px) and (max-width: 1023px)" 
+                                        srcset="
+                                            img/portfolio/kids-site-middle@1x.jpg 1x, 
+                                            img/portfolio/kids-site-middle@2x.jpg 2x">
+                
+                                    <source 
+                                        media="(max-width: 767px)" 
+                                        srcset="
+                                            img/portfolio/kids-site-mobil@1x.jpg 1x, 
+                                            img/portfolio/kids-site-mobil@2x.jpg 2x" >
+                
+                                    <img 
+                                        src="img/portfolio/kids-site-middle@1x.jpg" 
+                                        srcset="img/portfolio/kids-site-middle@2x.webp 2x" 
+                                        alt="Сайт магазина детской одежды" 
+                                        class="swiper-wrapper__img">
+                                </picture>
+                                <figcaption class="swiper-wrapper__descr-img">
+                                    Сайт магазина детской одежды
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="swiper-wrapper__fugure">
+                                <picture>
+                                    <source 
+                                        media="(min-width: 768px) and (max-width: 1023px)" 
+                                        type="image/webp" 
+                                        srcset="
+                                            img/portfolio/fisher-site-middle@1x.webp 1x, 
+                                            img/portfolio/fisher-site-middle@2x.webp 2x">
+                
+                                    <source 
+                                        media="(max-width: 767px)" 
+                                        type="image/webp" 
+                                        srcset="
+                                            img/portfolio/fisher-site-mobil@1x.webp 1x, 
+                                            img/portfolio/fisher-site-mobil@2x.webp 2x">
+                
+                                    <source 
+                                        media="(min-width: 768px) and (max-width: 1023px)" 
+                                        srcset="
+                                            img/portfolio/fisher-site-middle@1x.jpg 1x, 
+                                            img/portfolio/fisher-site-middle@2x.jpg 2x">
+                
+                                    <source 
+                                        media="(max-width: 767px)" 
+                                        srcset="
+                                            img/portfolio/fisher-site-mobil@1x.jpg 1x, 
+                                            img/portfolio/fisher-site-mobil@2x.jpg 2x" >
+                
+                                    <img 
+                                        src="img/portfolio/fisher-site-middle@1x.jpg" 
+                                        srcset="img/portfolio/fisher-site-middle@2x.webp 2x" 
+                                        alt="Сайт магазина рыболов" 
+                                        class="swiper-wrapper__img">
+                                </picture>
+                                <figcaption class="swiper-wrapper__descr-img">
+                                    Сайт магазина &laquo;Рыболов&raquo;
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-dots">
+                </div>
+
+                <button 
+                    class="btn btn--orange portfolio__info-btn" 
+                    type="button"
+                    aria-expanded="false"
+                    aria-label="Заказать проект">
+                        Заказать проект
+                </button>
+            </div>
+        </section>
+
+        <section id="price" class="price">
+            <div class="svg-container price__svg-container">
+                <object type="image/svg+xml" data="./img/svg/white-codding.svg" class="svg-container__object svg-container__object--white-codding">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/white-grid.svg" class="svg-container__object svg-container__object--white-grid">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/white-container.svg" class="svg-container__object svg-container__object--white-container">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/white-parentheses.svg" class="svg-container__object svg-container__object--white-first-parentheses">
+                    Your browser does not support SVG
+                </object>
+
+                <object type="image/svg+xml" data="./img/svg/white-parentheses.svg" class="svg-container__object svg-container__object--white-last-parentheses">
+                    Your browser does not support SVG
+                </object>
+            </div>
+            
+            <h2 class="visually-hidden">
+                Мои цены
+            </h2>
+
+            <div class="fixed-container">
+                <p class="price__description">
+                    Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+                </p>
+                <p class="price__note">
+                    <small>
+                        Срок и стоимость могут отличаться от заявленных и&nbsp;рассчитываются  индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+                    </small>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="fixed-container footer__flex-container">
+            <ul class="nav-list footer__nav-list">
+                <li class="nav-list__item nav-list__item--list">
+                    <a 
+                    href="#me-do" 
+                    class="nav-list__link nav-list__link--grey">
+                        Услуги
+                    </a>
+                </li>
+                <li class="nav-list__item nav-list__item--list">
+                    <a 
+                    href="#portfolio" 
+                    class="nav-list__link nav-list__link--grey">
+                        Портфолио
+                    </a>
+                </li>
+                <li class="nav-list__item nav-list__item--list">
+                    <a 
+                    href="#price" 
+                    class="nav-list__link nav-list__link--grey">
+                        Стоимость
+                     </a>
+                 </li>
+            </ul>
+
+            <address class="address">
+                <ul class="address__list">
+                    <li class="address__item">
+                        <a 
+                        href="tel:+74999957755" 
+                        class="address__link address__link--phone">
+                            +7 (499) 995-77-55
+                        </a>
+                    </li>
+                    <li class="address__item">
+                        <a 
+                        href="mailto:dmitry@alekseev.com" 
+                        class="address__link address__link--email">
+                            dmitry@alekseev.com
+                        </a>
+                    </li>
+                </ul>
+            </address>
+
+            <div class="feedback">
+                <button 
+                    class="btn btn--pink feedback__btn" 
+                    aria-label="Заказать звонок" 
+                    aria-expanded="false"
+                    type="button">
+                        Заказать звонок
+                </button>
+
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a 
+                            class="social-list__link social-list__link--vk" 
+                            href="https://vk.com/" 
+                            aria-label="Я в VKontakte" >
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a 
+                            class="social-list__link social-list__link--fb" 
+                            href="https://ru-ru.facebook.com/" 
+                            aria-label="Я в Facebook" >
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a 
+                            class="social-list__link social-list__link--tw" 
+                            href="https://twitter.com/explore" 
+                            aria-label="Я в Tweetter">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a 
+                            class="social-list__link social-list__link--inst" 
+                            href="https://www.instagram.com/" 
+                            aria-label="Я в Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">
+            &copy; Дмитрий Алексеев, 2016 – 2018
+        </p>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+    </footer>
+
+    <div class="popup">
+        <form method="POST" enctype="multipart/form-data" action="#" class="callback js-call">
+            <fieldset class="callback__window">
+                <legend class="callback__heading">
+                    Обратный звонок
+                </legend>
+                <button
+                    type="button"
+                    class="callback__close js-close-form">
+                        &#10060;
+                </button>
+                
+                <ul class="callback__list">
+                    <li class="callback__item">
+                        <input type="text" name="Имя" id="call-name" class="area-form" required>
+                        <label for="call-name" class="label-form">Ваше имя: *</label>
+
+                    </li>
+                    <li class="callback__item">
+                        <input type="tel" name="Телефон" id="call-phone" class="area-form" required placeholder="+7 (___) ___-__-__">
+                        <label for="call-phone" class="label-form">Ваш телефон: *</label>
+                    </li>
+                    <li class="callback__item">
+                        <input type="submit" value="Отправить" class="callback__submit">
+                    </li>
+                    <li class="callback__item">
+                        <input type="checkbox" name="consent" id="call-consent" checked>
+                        <label for="call-consent">Согласие на обработку персональных данных</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <form method="POST" enctype="multipart/form-data" action="#" class="callback js-application">
+            <fieldset class="callback__window">
+                <legend class="callback__heading">
+                    Задать вопрос
+                </legend>
+                <button
+                    type="button"
+                    class="callback__close js-close-form">
+                        &#10060;
+                </button>
+                
+                <ul class="callback__list">
+                    <li class="callback__item">
+                        <input type="text" name="Имя" id="application-name" class="area-form" required>
+                        <label for="application-name" class="label-form">Ваше имя: *</label>
+                    </li>
+                    <li class="callback__item">
+                        <input type="tel" name="Телефон" id="application-phone" class="area-form" required placeholder="+7 (___) ___-__-__">
+                        <label for="application-phone" class="label-form">Ваш телефон: *</label>
+                    </li>
+                    <li class="callback__item">
+                        <textarea name="Вопрос" id="application-question" cols="75" rows="7" class="area-form"></textarea>
+                        <label for="application-question" class="label-form">Текст сообщения:</label>
+                    </li>
+                    <li class="callback__item">
+                        <input type="submit" value="Отправить" class="callback__submit">
+                    </li>
+                    <li class="callback__item">
+                        <input type="checkbox" name="consent" id="application-consent" checked>
+                        <label for="application-consent">Согласие на обработку персональных данных</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <div class="success">
+            <img src="./img/success.png" alt="success img" class="success__img">
+            <button
+                    type="button"
+                    class="success__close js-close-form">
+                        &#10060;
+                </button>
+            <p class="success__description">
+                Ваше сообщение успешно отправлено. Я скоро свяжусь с Вами!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

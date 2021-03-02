@@ -1,0 +1,35 @@
+.portfolio {
+    padding: $paddingMainLarge;
+    text-align: center;
+
+    &__section-heading {
+        margin-bottom: 101px;
+        }
+
+    &__info-btn {
+        padding: 18px 63px 19px;
+        font-size: $textSize18;
+        }
+
+    @include large {
+        padding: $paddingMainMedium;
+
+        &__info-btn {
+            padding: 22px 90px 21px;
+            font-size: $textSize16;
+            }
+        }
+
+    @include small {
+        padding: $paddingMainSmall;
+
+        &__info-btn {
+            padding: 18px 75px 17px 78px;
+            letter-spacing: 0.3px;
+            }
+
+        &__section-heading {
+            margin-bottom: 43px;
+            }
+        }
+    }

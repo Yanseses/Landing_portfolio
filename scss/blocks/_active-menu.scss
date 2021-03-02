@@ -1,0 +1,5 @@
+.active-menu {
+    @include large {
+        left: 0;
+        }
+}

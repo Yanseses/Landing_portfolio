@@ -1,0 +1,176 @@
+.work-list {
+    margin: 0;
+    padding: $paddingZero;
+    margin-bottom: 94px;
+    @include flexContainer;
+
+    &__item {
+        display: inline-block;
+        width: 257px;
+        }
+
+    &__item:nth-child(4n+2) {
+        width: 362.5px;
+        }
+
+    &__item:nth-child(4n+3) {
+        width: 212.5px;
+        }
+
+    &__item:nth-child(4n+4) {
+        width: 249px;
+        margin-left: 45px;
+        }
+
+    &__description {
+        font-size: $textSize20;
+        font-weight: 400;
+        margin: $marginZero;
+        line-height: 1.44;
+        padding-top: 96px;
+        letter-spacing: 0.3px;
+
+        &--response-icon {
+            background-position-x: 144px;
+            background-position-y: 3px;
+            background-size: 79px;
+            background-repeat: no-repeat;
+            background-image: url("../img/response-icon.png");
+            }
+
+        &--coding-icon {
+            background-position-x: 92px;
+            background-position-y: 3px;
+            background-size: 74px;
+            background-repeat: no-repeat;
+            background-image: url("../img/coding-icon.png");
+            }
+
+        &--programming-icon {
+            background-position-x: 69px;
+            background-position-y: 3px;
+            background-size: 74px;
+            background-repeat: no-repeat;
+            background-image: url("../img/programming-icon.png");
+            }
+
+        &--computer-icon {
+            background-position-x: 89px;
+            background-position-y: 3px;
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-image: url("../img/computer-icon.png");
+            }
+        }
+
+    @include large {
+        max-width: 700px;
+        margin: 0 auto 96px;
+
+        &__item {
+            &:nth-child(n+3) {
+                margin-top: 76px;
+                }
+
+            &:nth-child(4n+3) {
+                margin-left: 24px;
+                width: 212.5px;
+                }
+
+            &:nth-child(4n+4) {
+                margin-left: $marginZero;
+                margin-right: 60px;
+                }
+            }
+        }
+    
+    @include medium {
+        padding: $paddingZero;
+
+        &__description {
+            background-position-x: center;
+            font-size: 19px;
+            }
+
+        &__item {
+            width: 50%;
+
+            &:nth-child(4n+2) {
+                width: 50%;
+                }
+
+            &:nth-child(4n+3) {
+                width: 50%;
+                margin-left: 0;
+                }
+
+            &:nth-child(4n+4) {
+                width: 50%;
+                margin-right: 0;
+                }
+            }
+        }   
+
+    @include small {
+        margin-bottom: 75px;
+
+        &__description {
+            font-size: $textSize16;
+            }
+        }
+
+    @include xSmall {
+        padding: $paddingZero;
+        margin-bottom: 52px;
+
+        &__description {
+            font-size: $textSize16;
+            padding-top: 75px;
+
+            &--coding-icon {
+                background-position-x: 109px;
+                background-position-y: 0;
+                background-size: 22%;
+                }
+
+            &--programming-icon {
+                background-position-x: 111px;
+                background-position-y: 0;
+                background-size: 21%;
+                }
+
+            &--response-icon {
+                background-position-x: 108px;
+                background-position-y: 0;
+                background-size: 22%;
+                }
+
+            &--computer-icon {
+                background-position-x: 108px;
+                background-size: 22%;
+                }
+            }
+
+        &__item {
+            width: 280px;
+
+            &:nth-child(4n+3) {
+                width: 280px;
+            }
+
+            &:nth-child(4n+4) {
+                width: 280px;
+            }
+
+            &:nth-child(4n+2) {
+                width: 280px;
+            }
+
+            &:not(:first-child) {
+                margin-top: 50px;
+                margin-left: $marginZero;
+                margin-right: $marginZero;
+                }
+            }
+        }
+    }

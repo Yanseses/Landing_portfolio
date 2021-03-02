@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 77px;
+
+    &__flex-container {
+        @include flexContainer;
+        }
+
+    &__nav-list {
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: $marginZero;
+        }
+    
+    @include large {
+        padding-top: 101px;
+        }
+
+    @include medium {
+        padding-top: 60px;
+        }
+    
+    @include small {
+        padding-top: 38px;
+
+        &__flex-conteiner {
+            justify-content: space-around;
+            }
+        }
+    }

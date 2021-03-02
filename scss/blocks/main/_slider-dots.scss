@@ -1,0 +1,39 @@
+.slider-dots {
+    display: none;
+
+    @include large {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 85px;
+        padding: 0;
+
+        &__btn {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 13px;
+            background-color: #ebebeb;
+            border: 1px solid #ebebeb;
+            border-radius: 50% 50%;
+
+            &.swiper-pagination-bullet-active {
+                background-color: #ff4e2e;
+                }
+
+            &:hover {
+                background-color: #ff4e2e;
+                border-color: #ff4e2e;
+                }
+            }
+        }
+
+    @include small {
+        margin-bottom: 40px;
+
+        &__btn {
+            width: 12px;
+            height: 12px;
+            margin: 7px;
+            }
+        }
+    }

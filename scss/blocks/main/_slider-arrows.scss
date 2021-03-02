@@ -1,0 +1,30 @@
+.slider-arrows {
+    width: $xlContainer;
+    height: 309px;
+    position: absolute;
+    z-index: 10;
+
+    &__button {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-image: url("../img/arrow.png");
+        position: absolute;
+        border: none;
+        top: calc(50% - 36px);
+
+        &--left {
+            left: -30px;
+            }   
+
+        &--right {
+            left: auto;
+            right: -30px;
+            transform: rotate(180deg);
+            }
+        }
+        
+    @include large {
+        display: none;
+        }
+    }

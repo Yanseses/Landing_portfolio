@@ -1,0 +1,24 @@
+.btn {
+    cursor: pointer;
+    letter-spacing: 0.3px;
+
+    &--pink {
+        border: 1px solid #f82370;
+        background-color: #fbfbfb;
+        color: #f82370;
+        }
+
+    &--orange {
+        border: 1px solid #ff4e2e;
+        background-color: #ff4e2e;
+        color: $colorWhite;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #ff4e2e;
+            transition: 0.5s;
+            box-shadow: 0 0 10px 5px #ff4e2e, inset 0 0 10px 0 #ff4e2e;
+            }
+        }
+    }

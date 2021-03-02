@@ -1,0 +1,15 @@
+.copyright {
+    font-size: $textSize16;
+    text-align: center;
+    background-color: #31293c;
+    margin-top: 75px;
+    margin-bottom: $marginZero;
+    padding: 30px 0 33px;
+    color: $colorWhite;
+
+    @include small {
+        margin-top: 45px;
+        font-size: $textSize12;
+        padding: 18px 0 19px;
+        }
+    }
