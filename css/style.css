@@ -1001,6 +1001,14 @@ a {
   top: calc(50% - 36px);
 }
 
+.slider-arrows__button:focus {
+  outline: none;
+}
+
+.slider-arrows__button:hover {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+
 .slider-arrows__button--left {
   left: -30px;
 }
